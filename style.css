@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(to bottom, #4e4cb8, #75a3db);
+}
+
+.main-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  margin: 2rem 0;
+}
+
+h1 {
+  margin-top: 0;
+  font-size: 3rem;
+  color: #fff;
+  font-weight: 500;
+}
+
+h2 {
+  margin-top: 0;
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.game {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  gap: 2rem;
+}
+
+.game-board {
+  border: 0.2rem solid #fff;
+  margin-bottom: 0.8rem;
+  padding: 0.25rem;
+}
+
+.board-row {
+  display: flex;
+}
+
+.square {
+  background-color: #fff;
+  border: 0.25rem solid #4e4cb8;
+  border-radius: 0.25rem;
+  font-size: 2.5rem;
+  font-weight: bold;
+  line-height: 3.75rem;
+  height: 5rem;
+  width: 5rem;
+  margin-right: 0.1rem;
+  margin-top: 0.1rem;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.square:hover {
+  background-color: #ddd;
+}
+
+.square:focus {
+  outline: none;
+}
+
+.status {
+  margin-bottom: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.game-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+}
+
+li {
+  list-style: none;
+  margin-bottom: 0.25rem;
+}
+
+button {
+  background-color: #fff;
+  border: none;
+  border-radius: 0.25rem;
+  color: #4e4cb8;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  padding: 0.25rem .5rem;
+  width: 100%;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #4e4cb8;
+  color: #fff;
+}
+
+button:focus {
+  outline: none;
+}
+
+li > div {
+  background-color:  #4e4cb8;
+  border-radius: 0.25rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: .1rem;
+  padding: 0.25rem .5rem;
+}
+
+ol {
+  padding-inline-start: 0;
+  width: max-content;
+}
+
+
+@media(max-width: 768px) {
+  .game{
+    flex-direction: column;
+  }
+}
+
+.winning-square{
+  background-color: #4e4cb8;
+  color: #fff;
+  border-color: #4443a3;
+}
